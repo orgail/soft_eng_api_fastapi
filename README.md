@@ -65,11 +65,11 @@ uvicorn main:app
 Далее в другой командной строке вводим curl-команду
 
 
-**Windows
+**Windows**
 
 curl -X POST  http://127.0.0.1:8000/recognition/ -H "Content-Type: application/json" -d "{\"text\":\"My name is Clara and I live in Berkeley, California.\"}"
 
-**Linux
+**Linux**
 
 curl -X 'POST' \
   'http://127.0.0.1:8000/recognition/' \

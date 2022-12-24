@@ -43,6 +43,13 @@ My name is Clara and I live in Berkeley, California.
 
 ## Запуск приложения:
 
+Копируем к себе в отдельную папку 2 файла main.py и requirements.txt
+Ставим библиотеки 
+pip install -r requirements.txt
+в командной строке переходим в рабочую папку и стартуем сервер    
+uvicorn main:app 
+Далее в другой командной строке вводим curl-команду
+
 **Windows
 
 curl -X POST  http://127.0.0.1:8000/recognition/ -H "Content-Type: application/json" -d "{\"text\":\"My name is Clara and I live in Berkeley, California.\"}"

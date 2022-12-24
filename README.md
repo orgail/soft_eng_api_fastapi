@@ -10,14 +10,23 @@ https://huggingface.co/dslim/bert-base-NER
 bert-base-NER — это точно настроенная модель BERT, готовая к использованию для распознавания именованных объектов и обеспечивающая самую современную производительность для задачи NER. Она обучена распознавать четыре типа объектов: местонахождение (LOC), организации (ORG), лица (PER) и разные (MISC).
 
 Abbreviation	Description
+
 O	    		Outside of a named entity
+
 B-MIS			Beginning of a miscellaneous entity right after another miscellaneous entity
+
 I-MIS			Miscellaneous entity
+
 B-PER			Beginning of a person’s name right after another person’s name
+
 I-PER			Person’s name
+
 B-ORG			Beginning of an organization right after another organization
+
 I-ORG			organization
+
 B-LOC			Beginning of a location right after another location
+
 I-LOC			Location
 
 
@@ -44,11 +53,17 @@ My name is Clara and I live in Berkeley, California.
 ## Запуск приложения:
 
 Копируем к себе в отдельную папку 2 файла main.py и requirements.txt
+
 Ставим библиотеки 
+
 pip install -r requirements.txt
-в командной строке переходим в рабочую папку и стартуем сервер    
+
+в командной строке переходим в рабочую папку и стартуем сервер 
+   
 uvicorn main:app 
+
 Далее в другой командной строке вводим curl-команду
+
 
 **Windows
 
